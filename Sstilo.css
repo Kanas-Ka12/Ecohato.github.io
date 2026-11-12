@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+        object-fit: contain;
+    width: 90%;
+    height: 80px;
+    margin: 15px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 45px;
+
+    background: rgba(255, 255, 255, 0.94);
+    border-radius: 60px;
+
+    box-shadow: 0 5px 20px rgba(0, 50, 100, 0.30);
+
+    position: relative;
+    z-index: 2;
+    
+} 
+ .navbar a{
+        gap: 5px;
+        display: inline;
+        font-size: 20px;
+    }
+
+.navbar a.active{
+    color: floralwhite;
+}
+
+    .navbar a{
+        gap: 128px;
+        font-size: 32px;
+        color:  #0c3f7a;
+    }
+
+
+.header-message{
+display: flex;
+align-items: start;
+    }
+
+.header-message img {
+    margin-right: 0;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    right: 0;
+}
+
+.header-message p {
+    margin-left: 0;
+    align-self: self-end;
+    color: #0c3f7a;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.0;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: start;
+    gap: 32px;
+    
+}
+.logo h1{
+color: #1d48a5;
+font-size: 32px;
+}
+
+.logo img {
+    right: 10px;
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+
+@media (max-width: 900px) {
+     .header {
+        padding: 15px 25px;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 15px;
+        color: floralwhite;
+    }
+    .navbar a{
+        gap: 32px;
+        display: flex;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .navbar {
+        gap: 32px;
+    }
+
+    .header-message {
+        display: none;
+        text-align: center;
+        size: 1px;
+        gap: 24px;
+    }
+    
+.navbar img {
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+}
+
+}
+
+
+body{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive;
+font-size: 1em;
+color: rgb(255, 0, 0);
+font-weight: bold;
+text-align: center;
+background-image: url(/Pif/Images/Bakugruond.png);
+color: rgba(0, 0, 255, 200);
+}
+
+.panel {
+    width: 430px;
+    margin: 28px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.card {
+    position: relative;
+    background: #ffffff;
+    border-radius: 28px;
+    box-shadow: 0 14px 32px rgba(18, 48, 90, 0.16);
+    padding: 22px;
+    text-align: left;
+    width: auto;
+    height: 450px;
+    resize: false;
+}
+.card-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+
+.badge {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    color: #ffffff;
+}
+.card h2 {
+    font-size: 26px;
+    color: #16325c;
+    font-weight: 800;
+}
+.card-head p {
+    margin-top: 3px;
+    color: #8b95a5;
+    font-size: 14px;
+    font-weight: 500;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.login-forme {
+    resize: false;
+display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: auto;
+    height: 120px;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 52px;
+    padding: 0 14px;
+    background: #f3f5f8;
+    border-radius: 14px;
+    color: #9aa3b2;
+}
+
+.field input {
+    border: 0;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 15px;
+    color: #24344d;
+}
+.btn {
+    height: 52px;
+    border: 0;
+    border-radius: 999px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.btnIni { background: #12386b; 
+}
+
+.Registro {
+    text-align: center;
+    color: #8b95a5;
+    font-size: 15px;
+}
+.Registro a {
+    color: #1a56d6;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
+
+.field-report {
+    height: auto;
+    align-items: stretch;
+    padding: 12px 14px;
+}
+
+#labelPtrm{
+    position: relative;
+    left: 450px;
+    top: -400px;
+    height: fit-content;
+    width: auto;
+}
+
+#listaReportes{
+position: relative;
+height: 400px;
+}
+
+.sesion-activa {
+    text-align: center;
+    color: #16325c;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+#TextR,
+#listaReportes {
+    width: 100%;
+    min-height: 200px;
+    border: 0;
+    outline: none;
+    resize: vertical;
+    background: transparent;
+    font: inherit;
+    color: #24344d;
+}
